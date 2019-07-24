@@ -1,0 +1,42 @@
+&.add-movie-form {
+  color: #424040;
+
+  input,
+  button {
+    width: calc(100% - 1rem);
+    height: 4rem;
+
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    font-size: 2rem;
+
+    border: 0.2rem solid #cccccc;
+    border-radius: 0.5rem;
+
+    &:focus {
+      border: 0.2rem solid #e91c50;
+      outline: none;
+    }
+  }
+
+  button {
+    margin-top: 2rem;
+
+    background-color: #e91c50;
+    color: #ffffff;
+
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: lighten(#e91c50, 5%);
+      text-decoration: underline;
+    }
+
+    &:active {
+      background-color: darken(#e91c50, 10%);
+    }
+  }
+}
