@@ -7,9 +7,4 @@ export default Component.extend({
 
   movies: null,
 
-  actions: {
-    sortMovies() {
-      this.movies.sort(function(a, b){return a-b});
-    } 
-  }
 });

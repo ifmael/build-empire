@@ -14,7 +14,7 @@ export default Component.extend({
     debugger;
     const add = this.get('add');
     event.preventDefault();
-    add(this.get('title'), this.get('description'), this.get('image'));
-    this.setProperties({'title': null, 'image': null, 'description': null});
+    add(this.get('title'), this.get('description'), this.get('image'), this.get('rating'));
+    this.setProperties({'title': null, 'image': null, 'description': null, 'rating': null});
   }
 });
