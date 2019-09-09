@@ -7,6 +7,7 @@ export default Component.extend({
   movie: null,
 
   update: null,
+  updated: null,
 
   submit (event) {
     event.preventDefault();
