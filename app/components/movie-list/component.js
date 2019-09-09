@@ -5,5 +5,11 @@ export default Component.extend({
 
   classNames:['movie-list'],
 
-  movies: null
+  movies: null,
+
+  actions: {
+    sortMovies() {
+      this.movies.sort(function(a, b){return a-b});
+    } 
+  }
 });

@@ -21,13 +21,13 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "xyz",
-      authDomain: "YOUR-FIREBASE-APP.firebaseapp.com",
-      databaseURL: "https://YOUR-FIREBASE-APP.firebaseio.com",
-      projectId: "YOUR-FIREBASE-APP",
-      storageBucket: "YOUR-FIREBASE-APP.appspot.com",
-      messagingSenderId: "00000000000",
-      appId: "APP ID HERE"
+      apiKey: "AIzaSyCdMu7C8N8boYIBd3ppI7V-VPHA-yVmQt0",
+      authDomain: "buildempire-3ea71.firebaseapp.com",
+      databaseURL: "https://buildempire-3ea71.firebaseio.com",
+      projectId: "buildempire-3ea71",
+      storageBucket: "buildempire-3ea71.appspot.com",
+      messagingSenderId: "690251525521",
+      appId: "1:690251525521:web:33193bcff55f32978a7e30"
     },
   };
 

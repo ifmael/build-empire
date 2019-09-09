@@ -11,6 +11,7 @@ export default Component.extend({
   add:null,
 
   submit (event) {
+    debugger;
     const add = this.get('add');
     event.preventDefault();
     add(this.get('title'), this.get('description'), this.get('image'));
