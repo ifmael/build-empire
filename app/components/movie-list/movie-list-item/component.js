@@ -5,5 +5,11 @@ export default Component.extend({
 
   classNames: ['movie-list-item'],
 
-  movie: null
+  movie: null,
+
+  actions: {
+    delete(movie){
+      movie.destroyRecord();
+    }
+  }
 });

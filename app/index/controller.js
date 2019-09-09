@@ -10,6 +10,7 @@ export default Controller.extend({
         rating
       });
       newMovie.save();
-    } 
-  }
+    },
+  },
+
 });

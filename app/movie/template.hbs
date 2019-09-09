@@ -1,0 +1,9 @@
+{{input value=model.title required=true class='form-title'}}
+
+{{input value=model.description required=true class='form-description'}}
+
+{{input value=model.image required=true class='form-image-url'}}
+
+{{input value=model.rating  required=true class='form-rating'}}
+
+<button {{action 'update' model}}>Update Movie</button>

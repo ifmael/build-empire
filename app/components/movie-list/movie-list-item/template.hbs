@@ -1,6 +1,7 @@
 <img src={{movie.image}}/>
 <div class='details'>
-    <h1>{{movie.title}}</h1>
+    <h1> {{#link-to 'movie' movie.id}} {{movie.title}} {{/link-to}} </h1>
     <p>{{movie.description}}</p>
     <p>Rating: {{movie.rating}}</p>
+    <button {{action 'delete' movie}}>Delete Movie</button>
 </div>
