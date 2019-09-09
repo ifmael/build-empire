@@ -7,6 +7,7 @@ export default Component.extend({
   title: null,
   image: null,
   description: null,
+  rating: null,
 
   add:null,
 

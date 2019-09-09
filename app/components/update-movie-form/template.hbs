@@ -1,0 +1,10 @@
+{{input value=movie.title required=true class='form-title'}}
+
+{{input value=movie.description required=true class='form-description' id='description'}}
+
+{{input value=movie.image required=true class='form-image-url'}}
+
+{{input value=movie.rating  type="number" min="0" max="5" required=true class='form-rating'}}
+
+<button type="submit">Update Movie</button>
+<button >{{#link-to 'index' }} Cancel {{/link-to}}</button>
