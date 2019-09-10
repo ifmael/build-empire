@@ -14,4 +14,19 @@ module('Integration | Component | movie-list/movie-list-item', function(hooks) {
 
     assert.ok(this.$().length);
   });
+
+   /*test('Show movie', async function(assert) {
+    const movieData = [
+      {
+        title: 'kill bill',
+        description: 'Description for kill bill 1',
+        image: 'http://images.org/kill-bill',
+        rating: '5',
+      }
+    ];
+
+    await render(hbs`{{movie-list-item movie=movieData}}`);
+    const component = this.owner.lookup('component:movie-list/movie-list-item');
+    assert.ok(this.$().length);
+  });*/
 });

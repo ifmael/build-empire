@@ -8,6 +8,7 @@ export default Component.extend({
 
   update: null,
   updated: null,
+  title: null,
 
   submit (event) {
     event.preventDefault();

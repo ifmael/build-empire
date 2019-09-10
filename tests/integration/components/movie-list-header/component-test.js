@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { render, find } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | movie-list-header', function(hooks) {
@@ -13,5 +13,12 @@ module('Integration | Component | movie-list-header', function(hooks) {
     await render(hbs`{{movie-list-header}}`);
 
     assert.ok(this.$().length);
+  });
+
+
+  test('it should show Movies', async function(assert) {
+    await render(hbs`{{movie-list-header}}`);
+
+    assert.equal(find('h1').innerText, 'Movies');
   });
 });
