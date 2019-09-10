@@ -6,19 +6,16 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Component | movie-list-header', function(hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
+  hooks.beforeEach( async function(){
     await render(hbs`{{movie-list-header}}`);
+  });
 
+  test('it renders', async function(assert) {
     assert.ok(this.$().length);
   });
 
 
   test('it should show Movies', async function(assert) {
-    await render(hbs`{{movie-list-header}}`);
-
     assert.equal(find('h1').innerText, 'Movies');
   });
 });
