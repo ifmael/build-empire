@@ -2,10 +2,10 @@ import Component from '@ember/component';
 
 export default Component.extend({
   tagName: 'form',
+  
   classNames: ['update-movie-form'],
 
   movie: null,
-
   update: null,
   updated: null,
   title: null,
