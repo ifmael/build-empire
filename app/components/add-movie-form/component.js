@@ -12,8 +12,8 @@ export default Component.extend({
   add:null,
 
   submit (event) {
-    const add = this.get('add');
     event.preventDefault();
+    const add = this.get('add');
     add(this.get('title'), this.get('description'), this.get('image'), this.get('rating'));
     this.setProperties({'title': null, 'image': null, 'description': null, 'rating': null});
   }
