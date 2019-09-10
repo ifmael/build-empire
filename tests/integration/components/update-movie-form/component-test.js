@@ -7,9 +7,6 @@ module('Integration | Component | update-movie-form', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
     await render(hbs`{{update-movie-form}}`);
 
     assert.ok(this.$().length);
@@ -38,7 +35,7 @@ module('Integration | Component | update-movie-form', function(hooks) {
       rating: 5
     };
 
-    this.set('movie', movieData);``
+    this.set('movie', movieData);
 
     this.set('update', function(movie){
       assert.equal(movieEdited.title, movie.title);
