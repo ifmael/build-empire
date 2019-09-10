@@ -7,19 +7,15 @@ module('Integration | Component | add-movie-form', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
     await render(hbs`{{add-movie-form}}`);
 
     assert.ok(this.$().length);
-
   });
 
   test('Show all input', async function(assert) {
     await render(hbs`{{add-movie-form}}`);
 
     assert.equal(this.element.querySelectorAll('input').length, 4);
-
   });
 
   test('Show the correct inputs', async function(assert) {
@@ -39,7 +35,7 @@ module('Integration | Component | add-movie-form', function(hooks) {
       rating: 5
     };
 
-    this.set('add', function(title, description, image, rating){
+    this.set('add', (title, description, image, rating) => {
       assert.equal(title, movie.title);
       assert.equal(description, movie.description);
       assert.equal(image, movie.image);

@@ -6,19 +6,15 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Component | landing-page', function(hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
+  hooks.beforeEach( async function() {
     await render(hbs`{{landing-page}}`);
-
-    assert.ok(this.$().length);
-
   });
 
-  test('Render add-movie-form, movie-list and movie-list-header components', async function(assert) {
-    await render(hbs`{{landing-page}}`);
+  test('it renders', function(assert) {
+    assert.ok(this.$().length);
+  });
 
+  test('Render add-movie-form, movie-list and movie-list-header components', function(assert) {
     assert.ok(this.$('.add-movie-form').length);
     assert.ok(this.$('.movie-list').length);
     assert.ok(this.$('.movie-list-header').length);
