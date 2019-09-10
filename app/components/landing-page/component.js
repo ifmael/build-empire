@@ -6,8 +6,7 @@ export default Component.extend({
   add:null,
   movies:null,
 
-  moviesSorted: computed.sort('movies', function(a,b){
-    return a.rating < b.ratig ? 1:-1;
+  moviesSorted: computed.sort('movies',function(a,b){
+    return a.rating < b.rating ? 1 : -1;
   }),
-  
 });
